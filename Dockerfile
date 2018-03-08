@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3.6 \
     python3.6-dev \
     curl \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3.6
